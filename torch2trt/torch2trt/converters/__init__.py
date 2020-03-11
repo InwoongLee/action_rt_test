@@ -7,6 +7,7 @@ from .dummy_converters import *
 from .activation import *
 from .adaptive_avg_pool2d import *
 from .adaptive_max_pool2d import *
+from .adaptive_avg_pool3d import *
 from .AdaptiveAvgPool2d import *
 from .add import *
 from .avg_pool2d import *
@@ -14,10 +15,12 @@ from .mul import *
 from .div import *
 from .BatchNorm1d import *
 from .BatchNorm2d import *
+from .BatchNorm3d import *
 from .cat import *
 from .clamp import *
 from .Conv1d import *
 from .Conv2d import *
+from .Conv3d import *
 from .ConvTranspose2d import *
 from .getitem import *
 from .identity import *
