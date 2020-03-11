@@ -1,0 +1,5 @@
+1 come_on
+2 taking_a_selfie
+3 shake_head
+4 cross_hands_in_front
+

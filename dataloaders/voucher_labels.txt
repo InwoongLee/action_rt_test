@@ -1,0 +1,14 @@
+1 running
+2 come_on
+3 hush
+4 taking_a_selfie
+5 hand_waving
+6 sit_down
+7 jump_up
+8 phone_call
+9 shake_head
+10 cross_hands_in_front
+11 fall_down
+12 thumb_up
+13 take_a_photo
+
