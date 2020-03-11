@@ -6,7 +6,8 @@ torch.backends.cudnn.benchmark = True
 
 import resnet_video_original as models
 
-
+from torch2trt import torch2trt
+from torch2trt import TRTModule
 
 def resize_with_pad(image, height=640, width=480):
 
@@ -65,6 +66,11 @@ def main():
     # model.load_state_dict(checkpoint['state_dict'])
     model.to(device)
     model.eval()
+
+    x = torch.ones((1,3,16,112,112)).cuda()
+    model_trt = torch2trt(model, [x])
+
+    torch.save(model_trt.state_dict(), 'r3d_18_trt.pth')
 
     # read video
     video = 'samples/S002C003P011R001A001_rgb.avi' 
